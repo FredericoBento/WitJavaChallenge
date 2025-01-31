@@ -1,2 +1,5 @@
 rootProject.name = 'WitJavaChallenge'
 
+include 'Calculator'
+include 'RestAPI'
+
