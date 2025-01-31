@@ -2,7 +2,6 @@ package com.fredericobento.RestAPI.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.fredericobento.RestAPI.model.CalculationOperation;
 import com.fredericobento.RestAPI.model.CalculationRequest;
 import com.fredericobento.RestAPI.model.CalculationResponse;
@@ -10,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.annotation.KafkaListener;
