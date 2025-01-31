@@ -1,5 +1,4 @@
 FROM openjdk:17-jdk-alpine
-
 WORKDIR /app
 COPY ./gradlew ./gradlew
 COPY ./build.gradle ./build.gradle
