@@ -1,5 +1,7 @@
 package com.fredericobento.RestAPI.controller;
 
+import com.fredericobento.RestAPI.model.CalculationOperation;
+import com.fredericobento.RestAPI.model.CalculationRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,8 +18,8 @@ public class RestApiController {
 
     @GetMapping("/sum")
     public String sum(@RequestParam int a, @RequestParam int b) {
-       int result = a + b;
-       return "result: " + result;
+       CalculationRequest request = new CalculationRequest(CalculationOperation.SUM, a, b);
+       return request.toString();
     }
 
     @GetMapping("/subtraction")
